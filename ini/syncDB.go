@@ -11,6 +11,7 @@ func SyncDatabases() {
 		models.User{},
 		models.Locker{},
 		models.Post{},
+		models.Tag{},
 	)
 
 	if err != nil {

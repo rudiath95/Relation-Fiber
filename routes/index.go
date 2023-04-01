@@ -15,4 +15,7 @@ func RouteIndex(app *fiber.App) {
 	app.Get("/posts", controllers.PostGetAll)
 	app.Post("/posts", controllers.CreatePost)
 
+	app.Get("/tags", controllers.TagGetAll)
+	app.Post("/tags", controllers.CreateTag)
+
 }
